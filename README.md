@@ -1,10 +1,10 @@
 # docker run
 docker run -itd \ \
-     -p 445:445 \ \
-     -v /mnt/tmp:/smb \\
-     --name public-smb \\
-     public-smb \\
-     /public-smb
+     \t-p 445:445 \ \
+     \t-v /mnt/tmp:/smb \ \
+     \t--name public-smb \ \
+     \tpublic-smb \ \
+     \t/public-smb
 
 # docker-smb-munki
 share smb: \\\127.0.0.1\public
