@@ -1,6 +1,6 @@
 # docker run
-docker run -itd \\n
-     -p 445:445 \\
+docker run -itd \
+     -p 445:445 \
      -v /mnt/tmp:/smb \\
      --name public-smb \\
      public-smb \\
