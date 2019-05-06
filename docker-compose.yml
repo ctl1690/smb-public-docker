@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+
+  smb:
+    container_name: public-smb
+    image: ctl1690/public-smb
+    restart: always
+    tty: true
+    ports:
+        - "445:445"
+    volumes:
+        - /mnt/tmp:/public-smb
